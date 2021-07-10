@@ -129,6 +129,7 @@ body {
 }
 
 .menu-studio {
+  position: relative;
   text-decoration: none;
   color: var(--menu-studio);
 
@@ -136,7 +137,13 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.current::after {
+  bottom: -33px;
+  color: #2196f3;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+}
 .menu-studio:hover,
 .menu-studio:focus,
 .menu-studio:active {
