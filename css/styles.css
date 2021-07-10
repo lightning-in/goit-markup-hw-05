@@ -92,6 +92,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo);
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-margin {
   margin-right: 93px;
@@ -127,6 +131,10 @@ body {
 .menu-studio {
   text-decoration: none;
   color: var(--menu-studio);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-studio:hover,
@@ -158,6 +166,10 @@ body {
   align-items: center;
   justify-content: center;
   fill: #757575;
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .envelope-class {
   width: 16px;
@@ -182,6 +194,10 @@ body {
 .tel-link {
   color: var(--hero-one);
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-link:hover,
@@ -390,6 +406,10 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   fill: #afb1b8;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comande-icons:hover,
@@ -416,6 +436,10 @@ body {
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icons:hover,
@@ -472,6 +496,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--contacts-list);
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .target:hover,
@@ -514,6 +542,10 @@ body {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons:hover,
@@ -566,6 +598,10 @@ body {
   border-radius: 4px;
   padding-left: 22px;
   padding-right: 22px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
@@ -600,6 +636,9 @@ body {
 .img-portfolio {
   text-decoration: none;
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-padding {
   padding-top: 20px;
