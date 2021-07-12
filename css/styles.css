@@ -70,6 +70,11 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section-two {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
 /* -- header page 1-- */
 .header {
   padding-top: 30px;
@@ -138,12 +143,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .dash {
-  position: relative;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  bottom: -37px;
 }
 
 .menu-studio:hover,
@@ -154,6 +153,15 @@ body {
 .menu-studio.current {
   color: var(--color-header);
 }
+.menu-studio.current::after {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-header);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
 .contacts-list {
   font-weight: 500;
   font-size: 14px;
@@ -171,9 +179,7 @@ body {
   align-items: center;
 }
 .icon-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-decoration: none;
   fill: #757575;
 
   transition-property: fill, border;
@@ -193,7 +199,7 @@ body {
 
 .icon-icon:hover,
 .icon-icon:focus {
-  fill: #2196f3;
+  fill: var(--color-header);
 }
 .mail-link {
   margin-right: 48px;
@@ -209,6 +215,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.port,
 .mail-link:hover,
 .mail-link:focus,
 .tel-link:hover,
@@ -272,10 +279,10 @@ body {
 .benefits-list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
 }
 
-.benefits-item {
-  margin-left: 30px;
+.benefits-item:not(:last-child) {
 }
 .benefits-item-icon {
   display: flex;
@@ -289,15 +296,11 @@ body {
 }
 .benefits-item-icon:not(:last-child) {
   margin-bottom: 30px;
-  margin-left: -30px;
 }
 
 .benefits-icon-class {
   width: 70px;
   height: 70px;
-}
-.benefits-item-icon:not(:last-child) {
-  margin-right: 30px;
 }
 
 .benefits-title {
@@ -309,7 +312,6 @@ body {
   text-align: left;
   color: var(--benefits-title);
   margin-bottom: 10px;
-  margin-left: -30px;
 }
 
 .description {
@@ -318,9 +320,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-left: -30px;
   width: 270px;
-  height: 120px;
 }
 
 /* end benefits */
@@ -658,8 +658,10 @@ body {
   align-items: center;
   position: absolute;
   top: 0%;
-  text-align: center;
+  text-align: start;
   overflow: auto;
+  padding-left: 24px;
+  padding-right: 24px;
   width: 100%;
   height: 100%;
   font-weight: normal;
@@ -733,15 +735,15 @@ body {
   top: 8px;
   right: 8px;
   padding: 8px;
-  display: block;
+  display: flex;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   cursor: pointer;
 }
 .close {
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
 }
 .is-hidden {
   opacity: 0;
