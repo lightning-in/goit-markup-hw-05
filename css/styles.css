@@ -180,32 +180,23 @@ body {
 .icon-list {
   display: flex;
   align-items: center;
+  margin-right: 48px;
 }
-.icon-icon {
+.envelope-class {
   text-decoration: none;
   fill: #757575;
 
-  transition-property: fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.envelope-class {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 .smartphone-class {
+  text-decoration: none;
+  fill: #757575;
+
   width: 10px;
   height: 16px;
   margin-right: 10px;
-}
-
-.icon-icon:hover,
-.icon-icon:focus {
-  fill: var(--color-header);
-}
-.mail-link {
-  margin-right: 48px;
 }
 
 .mail-link,
@@ -213,15 +204,20 @@ body {
   color: var(--hero-one);
   text-decoration: none;
 
-  transition-property: color;
+  transition-property: color, fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.envelope-class:hover,
+.envelope-class:focus,
+.smartphone-class:hover,
+.smartphone-class:focus,
 .mail-link:hover,
 .mail-link:focus,
 .tel-link:hover,
 .tel-link:focus {
   color: var(--color-header);
+  fill: var(--color-header);
 }
 
 /* -- end header -- */
