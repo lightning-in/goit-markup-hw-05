@@ -184,7 +184,7 @@ body {
 }
 .envelope-class {
   text-decoration: none;
-  fill: #757575;
+  fill: var(--hero-one);
 
   width: 16px;
   height: 12px;
@@ -192,7 +192,7 @@ body {
 }
 .smartphone-class {
   text-decoration: none;
-  fill: #757575;
+  fill: var(--hero-one);
 
   width: 10px;
   height: 16px;
@@ -211,13 +211,14 @@ body {
 .envelope-class:hover,
 .envelope-class:focus,
 .smartphone-class:hover,
-.smartphone-class:focus,
+.smartphone-class:focus {
+  fill: var(--color-header);
+}
 .mail-link:hover,
 .mail-link:focus,
 .tel-link:hover,
 .tel-link:focus {
   color: var(--color-header);
-  fill: var(--color-header);
 }
 
 /* -- end header -- */
