@@ -208,17 +208,20 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.envelope-class:hover,
-.envelope-class:focus,
-.smartphone-class:hover,
-.smartphone-class:focus {
-  fill: var(--color-header);
-}
+
 .mail-link:hover,
 .mail-link:focus,
 .tel-link:hover,
 .tel-link:focus {
   color: var(--color-header);
+}
+.mail-link:hover .envelope-class,
+.mail-link:focus .envelope-class {
+  fill: var(--color-header);
+}
+.tel-link:hover .smartphone-class,
+.tel-link:focus .smartphone-class {
+  fill: var(--color-header);
 }
 
 /* -- end header -- */
